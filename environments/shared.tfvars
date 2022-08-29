@@ -1,0 +1,13 @@
+name="kafka"
+namespace = "aws"
+region = "us-east-1"
+instance_type = "kafka.m5.xlarge"
+ebs_volume_size        = "3000"
+number_of_broker_nodes = "3"
+enhanced_monitoring    = "PER_TOPIC_PER_BROKER"
+client_broker          = "TLS"
+jmx_exporter_enabled   = true
+node_exporter_enabled  = true
+config_enabled         = false
+enable_cloudwatch_logs = true
+enable_key_rotation    = true
